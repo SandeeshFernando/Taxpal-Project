@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaxPal - Accounting made simple for small businesses and EVERYONE</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-brand-by-abhishek: #4f46e5;
+        --color-brand-by-abishek: #0a0f1e;
+      }
+    </style>
+  </head>
+
+  <!-- bg dark navy + all text white by default -->
+  <body style="background-color: #0a0f1e;" class="text-white">
+
+    <!-- NAVIGATION -->
+    <header class="sticky top-0 z-50 border-b border-indigo-900" style="background-color: #0d1425;">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+        <!-- Logo — indigo circle + pink dot -->
+        <a href="#" class="flex items-center gap-2">
+          <div class="w-8 h-8 bg-indigo-600 rounded-full flex items-center justify-center">
+            <div class="w-3 h-3 bg-pink-400 rounded-full"></div>
+          </div>
+          <span class="text-lg font-bold text-white">Tax<span class="text-pink-400">Pal</span></span>
+        </a>
+
+        <!-- Nav links -->
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="/TAXPAL/index .html" class="text-sm text-slate-300 hover:text-indigo-400 transition">Features</a>
+          <a href="/TAXPAL/index .html" class="text-sm text-slate-300 hover:text-indigo-400 transition">Testimonials</a>
+          <a href="/TAXPAL/index .html" class="text-sm text-slate-300 hover:text-indigo-400 transition">Pricing</a>
+        </nav>
+
+        <!-- Right side -->
+        <div class="flex items-center gap-6">
+          <a href="#" class="hidden md:block text-sm text-slate-300 hover:text-indigo-400 transition">Sign in</a>
+          <a href="#" class="py-2 px-4 bg-indigo-600 text-white text-sm rounded-full hover:bg-pink-500 transition duration-300">
+            Get started
+          </a>
+        </div>
+
+      </div>
+    </header>
+
+
+    <main>
+
+      <!-- HERO SECTION -->
+      <section class="flex justify-center min-h-screen items-center text-center px-6">
+        <div class="max-w-3xl">
+
+          <!-- Heading — white with indigo + pink highlights -->
+          <h1 class="text-5xl sm:text-7xl font-bold text-white leading-tight">
+            Accounting <br> made for<br>
+
+            <!-- "small businesses" = indigo with pink underline -->
+            <span class="text-indigo-400 relative whitespace-nowrap">
+              &nbsp;small businesses
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 418 42"
+                class="absolute left-0 top-full w-full"
+                style="height: 0.4em; margin-top: -0.1em;"
+                preserveAspectRatio="none"
+                fill="none"
+              >
+                <path
+                  d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z"
+                  fill="#f9a8d4"
+                />
+              </svg>
+            </span>
+
+            <!-- "and For EVERYONE" = pink with indigo underline -->
+            <span class="text-pink-400 relative whitespace-nowrap">
+              &nbsp;and For EVERYONE
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 418 42"
+                class="absolute left-0 top-full w-full"
+                style="height: 0.4em; margin-top: -0.1em;"
+                preserveAspectRatio="none"
+                fill="none"
+              >
+                <path
+                  d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z"
+                  fill="#a78bfa"
+                />
+              </svg>
+            </span>
+
+          </h1>
+
+          <!-- Subheading — soft white -->
+          <p class="mt-8 text-lg text-slate-400 max-w-xl mx-auto">
+            Most bookkeeping software is accurate, but hard to use. We make the
+            opposite trade-off, and hope you don't get audited.
+          </p>
+
+          <!-- Buttons -->
+          <div class="mt-8 flex justify-center items-center gap-4 flex-wrap">
+            <a href="#" class="py-3 px-6 bg-indigo-600 text-white text-sm font-semibold rounded-full hover:bg-pink-500 transition duration-300">
+              Get 6 months free
+            </a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ_" target="_blank" class="py-3 px-6 border border-slate-600 text-white rounded-full text-sm flex items-center gap-2 hover:border-indigo-400 transition duration-300">
+              <svg aria-hidden="true" class="h-3 w-3 fill-pink-400" viewBox="0 0 12 12">
+                <path d="m9.997 6.91-7.583 3.447A1 1 0 0 1 1 9.447V2.553a1 1 0 0 1 1.414-.91L9.997 5.09c.782.355.782 1.465 0 1.82Z" />
+              </svg>
+              Watch video
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- 6 COMPANIES — slightly lighter dark bg for contrast -->
+      <section class="py-16" style="background-color: #0d1425;">
+        <div class="max-w-5xl mx-auto px-6">
+
+          <p class="text-center text-sm text-slate-400 mb-12">
+            Trusted by these six companies so far
+          </p>
+
+          <!-- brightness-0 invert = turns logos white to work on dark background -->
+          <div class="flex flex-wrap justify-center items-center gap-x-16 gap-y-8">
+            <img src="https://salient.tailwindui.com/_next/static/media/transistor.9d3a167f.svg"
+              alt="Transistor" class="h-7 object-contain brightness-0 invert opacity-50 hover:opacity-100 transition duration-300" />
+            <img src="https://salient.tailwindui.com/_next/static/media/tuple.97a0bb9e.svg"
+              alt="Tuple" class="h-7 object-contain brightness-0 invert opacity-50 hover:opacity-100 transition duration-300" />
+            <img src="https://salient.tailwindui.com/_next/static/media/statickit.2a9d5f45.svg"
+              alt="StaticKit" class="h-7 object-contain brightness-0 invert opacity-50 hover:opacity-100 transition duration-300" />
+            <img src="https://salient.tailwindui.com/_next/static/media/mirage.0aec9e97.svg"
+              alt="Mirage" class="h-7 object-contain brightness-0 invert opacity-50 hover:opacity-100 transition duration-300" />
+            <img src="https://salient.tailwindui.com/_next/static/media/laravel.1e782b81.svg"
+              alt="Laravel" class="h-7 object-contain brightness-0 invert opacity-50 hover:opacity-100 transition duration-300" />
+            <img src="https://salient.tailwindui.com/_next/static/media/statamic.e967c32d.svg"
+              alt="Statamic" class="h-7 object-contain brightness-0 invert opacity-50 hover:opacity-100 transition duration-300" />
+          </div>
+        </div>
+      </section>
+
+
+      <!-- EVERYTHING YOU NEED — deep indigo background -->
+      <section id="features" class="relative text-white py-28 overflow-hidden" style="background-color: #1e1b4b;">
+
+        <div class="absolute inset-0 z-0 overflow-hidden">
+          <img
+            aria-hidden="true"
+            class="absolute top-1/2 left-1/2 max-w-none translate-x-[-44%] translate-y-[-42%] opacity-20"
+            src="https://salient.tailwindui.com/_next/static/media/background-features.5f7a9ac9.jpg"
+            alt=""
+          />
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6">
+
+          <div class="text-center mb-16">
+            <h2 class="text-3xl sm:text-5xl font-bold text-white">Everything you need to run your books.</h2>
+            <div class="w-20 h-1 bg-pink-500 mx-auto mt-4 rounded-full"></div>
+            <p class="mt-6 text-indigo-200 max-w-2xl mx-auto">
+              Well everything you need if you aren't that picky about minor details like tax compliance.
+            </p>
+          </div>
+
+          <div class="flex flex-col lg:flex-row items-center gap-10">
+
+            <div class="w-full lg:w-1/2">
+              <!-- Active tab — pink left border -->
+              <div class="rounded-lg p-6 bg-white/10 ring-1 ring-white/10 ring-inset mb-2 border-l-4 border-pink-500">
+                <h3 class="font-semibold mb-1 text-white">Payroll</h3>
+                <p class="text-indigo-200 text-sm">Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.</p>
+              </div>
+              <div class="p-6 hover:bg-white/5 rounded-lg transition cursor-pointer">
+                <h3 class="font-semibold mb-1 text-white">Claim expenses</h3>
+                <p class="text-indigo-200 text-sm">All of your receipts organized into one place, as long as you don't mind typing in the data by hand.</p>
+              </div>
+              <div class="p-6 hover:bg-white/5 rounded-lg transition cursor-pointer">
+                <h3 class="font-semibold mb-1 text-white">VAT handling</h3>
+                <p class="text-indigo-200 text-sm">We only sell our software to companies who don't deal with VAT at all, so technically we handle it.</p>
+              </div>
+              <div class="p-6 hover:bg-white/5 rounded-lg transition cursor-pointer">
+                <h3 class="font-semibold mb-1 text-white">Reporting</h3>
+                <p class="text-indigo-200 text-sm">Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.</p>
+              </div>
+            </div>
+
+            <div class="w-full lg:w-1/2">
+              <img
+                src="https://salient.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fexpenses.6dca4b99.png&w=3840&q=75"
+                alt="Expenses feature screenshot"
+                class="rounded-2xl shadow-2xl w-full ring-2 ring-pink-500/40"
+              />
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+      <!-- SIMPLIFY BUSINESS TASKS -->
+      <section class="py-24 px-6" style="background-color: #0a0f1e;">
+        <div class="max-w-5xl mx-auto">
+
+          <div class="text-center mb-16">
+            <h2 class="text-4xl sm:text-5xl font-bold text-white">Simplify everyday business tasks.</h2>
+            <div class="w-20 h-1 bg-indigo-500 mx-auto mt-4 rounded-full"></div>
+            <p class="mt-6 text-slate-400 max-w-2xl mx-auto text-lg">
+              Because you'd probably be a little confused if we suggested you complicate your everyday business tasks instead.
+            </p>
+          </div>
+
+          <div class="flex flex-col gap-8 lg:flex-row">
+
+            <!-- Card 1 — indigo active icon -->
+            <div class="flex-1">
+              <div class="bg-indigo-600 rounded-lg w-10 h-10 flex items-center justify-center mb-4">
+                <svg aria-hidden="true" class="h-6 w-6" fill="none" viewBox="0 0 39 39">
+                  <defs>
+                    <linearGradient id="grad1" x1="11.5" y1="18" x2="36" y2="15.5" gradientUnits="userSpaceOnUse">
+                      <stop offset=".194" stop-color="#fff"></stop>
+                      <stop offset="1" stop-color="#6692F1"></stop>
+                    </linearGradient>
+                  </defs>
+                  <path d="m30 15-4 5-4-11-4 18-4-11-4 7-4-5" stroke="url(#grad1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+              <p class="text-pink-400 font-semibold text-sm mb-2">Reporting</p>
+              <h3 class="font-semibold text-lg mb-2 text-white">Stay on top of things with always up-to-date reporting features.</h3>
+              <p class="text-slate-400 text-sm">We talked about reporting in the section above but we needed three items here, so mentioning it one more time for posterity.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="flex-1">
+              <div class="bg-slate-700 rounded-lg w-10 h-10 flex items-center justify-center mb-4 hover:bg-indigo-600 transition">
+                <svg aria-hidden="true" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                </svg>
+              </div>
+              <p class="text-pink-400 font-semibold text-sm mb-2">Inventory</p>
+              <h3 class="font-semibold text-lg mb-2 text-white">Never lose track of what's in stock with accurate inventory tracking.</h3>
+              <p class="text-slate-400 text-sm">We don't offer this as part of our software but that statement is inarguably true. Accurate inventory tracking would help you.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="flex-1">
+              <div class="bg-slate-700 rounded-lg w-10 h-10 flex items-center justify-center mb-4 hover:bg-indigo-600 transition">
+                <svg aria-hidden="true" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <p class="text-pink-400 font-semibold text-sm mb-2">Contacts</p>
+              <h3 class="font-semibold text-lg mb-2 text-white">Organize all of your contacts, service providers, and invoices in one place.</h3>
+              <p class="text-slate-400 text-sm">This also isn't actually a feature, it's just some friendly advice. We definitely recommend that you do this.</p>
+            </div>
+
+          </div>
+
+          <!-- Screenshot dark frame -->
+          <div class="rounded-3xl mt-16 ring-1 ring-indigo-800 overflow-hidden" style="background-color: #0d1425;">
+            <img
+              src="https://salient.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofit-loss.32a24c33.png&w=3840&q=75"
+              alt="Profit and loss screenshot"
+              class="m-6 rounded-2xl"
+            />
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- GET STARTED TODAY — dark navy to pink gradient -->
+      <section class="relative text-white py-24 overflow-hidden" style="background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #831843 100%);">
+
+        <div class="absolute inset-0 z-0">
+          <img
+            src="https://salient.tailwindui.com/_next/static/media/background-call-to-action.b2281629.jpg"
+            aria-hidden="true"
+            alt=""
+            class="w-full h-full object-cover opacity-10"
+          />
+        </div>
+
+        <div class="relative z-10 flex flex-col items-center text-center px-6">
+          <h2 class="text-4xl sm:text-5xl font-bold text-white mb-4">Get Your Bussiness Package Today</h2>
+          <div class="w-16 h-1 bg-pink-500 rounded-full mb-6"></div>
+          <p class="text-slate-300 text-lg max-w-xl mb-8">
+            It's time to take control of your books. Buy our software so you can feel like you're doing something productive.
+          </p>
+          <a href="#" class="py-3 px-8 bg-white text-slate-900 font-semibold rounded-full hover:bg-pink-500 hover:text-white transition duration-300">
+            Get 6 months free(Only For Limited time)
+          </a>
+        </div>
+
+      </section>
+
+
+      <!-- TESTIMONIALS -->
+      <section id="testimonials" class="py-24 px-6" style="background-color: #0d1425;">
+        <div class="max-w-7xl mx-auto">
+
+          <div class="text-center mb-16">
+            <h2 class="text-4xl sm:text-5xl font-bold text-white">Loved by businesses worldwide.</h2>
+            <div class="w-20 h-1 bg-pink-500 mx-auto mt-4 rounded-full"></div>
+            <p class="mt-6 text-slate-400 max-w-2xl mx-auto">
+              Our software is so simple that people can't help but fall in love with it. Simplicity is easy when you just skip tons of mission-critical features.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <article class="rounded-2xl p-6 ring-1 ring-indigo-800 hover:ring-pink-500 transition duration-300" style="background-color: #0a0f1e;">
+              <blockquote class="text-slate-300 text-sm leading-relaxed mb-6">
+                "TaxPal is so easy to use I can't help but wonder if it's really doing the things the government expects me to do."
+              </blockquote>
+              <div class="flex items-center gap-3">
+                <img src="https://salient.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar-1.c7d86bb3.png&w=128&q=75"
+                  alt="Sheryl Berge" class="w-10 h-10 rounded-full ring-2 ring-pink-500" />
+                <div>
+                  <p class="font-semibold text-sm text-white">Sheryl Berge</p>
+                  <p class="text-xs text-indigo-400">CEO at Lynch LLC</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="rounded-2xl p-6 ring-1 ring-indigo-800 hover:ring-pink-500 transition duration-300" style="background-color: #0a0f1e;">
+              <blockquote class="text-slate-300 text-sm leading-relaxed mb-6">
+                "I'm trying to get a hold of someone in support, I'm in a lot of trouble right now and they are saying it has something to do with my books."
+              </blockquote>
+              <div class="flex items-center gap-3">
+                <img src="https://salient.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar-4.9471a94e.png&w=128&q=75"
+                  alt="Amy Hahn" class="w-10 h-10 rounded-full ring-2 ring-pink-500" />
+                <div>
+                  <p class="font-semibold text-sm text-white">Amy Hahn</p>
+                  <p class="text-xs text-indigo-400">Director at Velocity Industries</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="rounded-2xl p-6 ring-1 ring-indigo-800 hover:ring-pink-500 transition duration-300" style="background-color: #0a0f1e;">
+              <blockquote class="text-slate-300 text-sm leading-relaxed mb-6">
+                "The best part about TaxPal is every time I pay my employees, my bank balance doesn't go down like it used to."
+              </blockquote>
+              <div class="flex items-center gap-3">
+                <img src="https://salient.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar-5.57c39f6b.png&w=128&q=75"
+                  alt="Leland Kiehn" class="w-10 h-10 rounded-full ring-2 ring-pink-500" />
+                <div>
+                  <p class="font-semibold text-sm text-white">Leland Kiehn</p>
+                  <p class="text-xs text-indigo-400">Founder of Kiehn and Sons</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="rounded-2xl p-6 ring-1 ring-indigo-800 hover:ring-pink-500 transition duration-300" style="background-color: #0a0f1e;">
+              <blockquote class="text-slate-300 text-sm leading-relaxed mb-6">
+                "There are so many things I had to do with my old software that I just don't do at all with TaxPal. Suspicious but I can't say I don't love it."
+              </blockquote>
+              <div class="flex items-center gap-3">
+                <img src="https://salient.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar-2.602128e9.png&w=128&q=75"
+                  alt="Erin Powlowski" class="w-10 h-10 rounded-full ring-2 ring-pink-500" />
+                <div>
+                  <p class="font-semibold text-sm text-white">Erin Powlowski</p>
+                  <p class="text-xs text-indigo-400">COO at Armstrong Inc</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="rounded-2xl p-6 ring-1 ring-indigo-800 hover:ring-pink-500 transition duration-300" style="background-color: #0a0f1e;">
+              <blockquote class="text-slate-300 text-sm leading-relaxed mb-6">
+                "I used to have to remit tax to the EU and with TaxPal I somehow don't have to do that anymore. Nervous to travel there now though."
+              </blockquote>
+              <div class="flex items-center gap-3">
+                <img src="https://salient.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar-3.5abad591.png&w=128&q=75"
+                  alt="Peter Renolds" class="w-10 h-10 rounded-full ring-2 ring-pink-500" />
+                <div>
+                  <p class="font-semibold text-sm text-white">Peter Renolds</p>
+                  <p class="text-xs text-indigo-400">Founder of West Inc</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="rounded-2xl p-6 ring-1 ring-indigo-800 hover:ring-pink-500 transition duration-300" style="background-color: #0a0f1e;">
+              <blockquote class="text-slate-300 text-sm leading-relaxed mb-6">
+                "This is the fourth email I've sent to your support team. I am literally being held in jail for tax fraud. Please answer your emails."
+              </blockquote>
+              <div class="flex items-center gap-3">
+                <img src="https://salient.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar-4.9471a94e.png&w=128&q=75"
+                  alt="Amy Hahn" class="w-10 h-10 rounded-full ring-2 ring-pink-500" />
+                <div>
+                  <p class="font-semibold text-sm text-white">Amy Hahn</p>
+                  <p class="text-xs text-indigo-400">Director at Velocity Industries</p>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+
+      <!-- PRICING -->
+      <section id="pricing" class="py-24 px-6" style="background-color: #0a0f1e;">
+        <div class="max-w-6xl mx-auto">
+
+          <div class="text-center mb-16">
+            <h2 class="text-4xl sm:text-5xl font-bold text-white">Simple pricing, for everyone.</h2>
+            <div class="w-20 h-1 bg-indigo-500 mx-auto mt-4 rounded-full"></div>
+            <p class="mt-6 text-slate-400 max-w-xl mx-auto">
+              It doesn't matter what size your business is, our software won't work well for you.
+            </p>
+          </div>
+
+          <div class="flex flex-col lg:flex-row items-stretch justify-center gap-8">
+
+            <!-- Starter — dark card -->
+            <div class="flex-1 max-w-sm mx-auto w-full rounded-3xl p-8 ring-1 ring-indigo-800 flex flex-col" style="background-color: #0d1425;">
+              <h3 class="font-semibold text-white mb-1">Starter</h3>
+              <p class="text-sm text-slate-400 mb-6">Good for anyone who is self-employed and just getting started.</p>
+              <div class="flex items-baseline gap-1 mb-8">
+                <span class="text-4xl font-bold text-white">$9</span>
+                <span class="text-slate-500 text-sm">/ month</span>
+              </div>
+              <ul class="space-y-3 text-sm text-slate-300 flex-1 mb-8">
+                <li class="flex gap-2"><svg class="h-4 w-4 text-indigo-400 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Send 10 quotes and invoices</li>
+                <li class="flex gap-2"><svg class="h-4 w-4 text-indigo-400 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Connect up to 2 bank accounts</li>
+                <li class="flex gap-2"><svg class="h-4 w-4 text-indigo-400 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Track up to 15 expenses per month</li>
+                <li class="flex gap-2"><svg class="h-4 w-4 text-indigo-400 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Manual payroll support</li>
+                <li class="flex gap-2"><svg class="h-4 w-4 text-indigo-400 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Export up to 3 reports</li>
+              </ul>
+              <a href="#" class="block text-center py-2 px-6 rounded-full border border-indigo-700 text-sm font-semibold text-white hover:bg-indigo-600 transition duration-300">Get started</a>
+            </div>
+
+            <!-- Small Business — pink ring + indigo gradient (highlighted) -->
+            <div class="flex-1 max-w-sm mx-auto w-full rounded-3xl p-8 ring-2 ring-pink-500 flex flex-col lg:scale-105" style="background: linear-gradient(160deg, #1e1b4b, #0f172a);">
+              <h3 class="font-semibold text-white mb-1">Small business</h3>
+              <p class="text-sm text-indigo-300 mb-6">Perfect for small / medium sized businesses.</p>
+              <div class="flex items-baseline gap-1 mb-8">
+                <span class="text-4xl font-bold text-white">$15</span>
+                <span class="text-indigo-400 text-sm">/ month</span>
+              </div>
+              <ul class="space-y-3 text-sm text-slate-300 flex-1 mb-8">
+                <li class="flex gap-2"><svg class="h-4 w-4 text-pink-400 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Send 25 quotes and invoices</li>
+                <li class="flex gap-2"><svg class="h-4 w-4 text-pink-400 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Connect up to 5 bank accounts</li>
+                <li class="flex gap-2"><svg class="h-4 w-4 text-pink-400 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Track up to 50 expenses per month</li>
+                <li class="flex gap-2"><svg class="h-4 w-4 text-pink-400 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Automated payroll support</li>
+                <li class="flex gap-2"><svg class="h-4 w-4 text-pink-400 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Export up to 12 reports</li>
+                <li class="flex gap-2"><svg class="h-4 w-4 text-pink-400 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Bulk reconcile transactions</li>
+                <li class="flex gap-2"><svg class="h-4 w-4 text-pink-400 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Track in multiple currencies</li>
+              </ul>
+              <a href="#" class="block text-center py-2 px-6 rounded-full bg-pink-500 text-white text-sm font-semibold hover:bg-pink-400 transition duration-300">Get started</a>
+            </div>
+
+            <!-- Enterprise — dark card -->
+            <div class="flex-1 max-w-sm mx-auto w-full rounded-3xl p-8 ring-1 ring-indigo-800 flex flex-col" style="background-color: #0d1425;">
+              <h3 class="font-semibold text-white mb-1">Enterprise</h3>
+              <p class="text-sm text-slate-400 mb-6">For even the biggest enterprise companies.</p>
+              <div class="flex items-baseline gap-1 mb-8">
+                <span class="text-4xl font-bold text-white">$39</span>
+                <span class="text-slate-500 text-sm">/ month</span>
+              </div>
+              <ul class="space-y-3 text-sm text-slate-300 flex-1 mb-8">
+                <li class="flex gap-2"><svg class="h-4 w-4 text-indigo-400 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Send unlimited quotes and invoices</li>
+                <li class="flex gap-2"><svg class="h-4 w-4 text-indigo-400 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Connect up to 15 bank accounts</li>
+                <li class="flex gap-2"><svg class="h-4 w-4 text-indigo-400 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Track up to 200 expenses per month</li>
+                <li class="flex gap-2"><svg class="h-4 w-4 text-indigo-400 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Automated payroll support</li>
+                <li class="flex gap-2"><svg class="h-4 w-4 text-indigo-400 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Export up to 25 reports, including TPS</li>
+              </ul>
+              <a href="#" class="block text-center py-2 px-6 rounded-full border border-indigo-700 text-sm font-semibold text-white hover:bg-indigo-600 transition duration-300">Get started</a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+      <!-- FAQ -->
+      <section class="relative py-24 px-6 overflow-hidden" style="background-color: #0d1425;">
+
+        <div class="absolute inset-0 z-0">
+          <img src="https://salient.tailwindui.com/_next/static/media/background-faqs.d5a912d6.jpg"
+            aria-hidden="true" alt="" class="w-full h-full object-cover opacity-5" />
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto">
+
+          <div class="text-center mb-16">
+            <h2 class="text-4xl sm:text-5xl font-bold text-white">Frequently asked questions</h2>
+            <div class="w-20 h-1 bg-pink-500 mx-auto mt-4 rounded-full"></div>
+            <p class="mt-6 text-slate-400 max-w-xl mx-auto">
+              If you can't find what you're looking for, email our support team and if you're lucky someone will get back to you.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8">
+
+            <div class="rounded-2xl p-6 ring-1 ring-indigo-800" style="background-color: #0a0f1e;">
+              <h4 class="font-semibold mb-2 text-indigo-300">Does TaxPal handle VAT?</h4>
+              <p class="text-sm text-slate-400">Well no, but if you move your company offshore you can probably ignore it.</p>
+            </div>
+            <div class="rounded-2xl p-6 ring-1 ring-indigo-800" style="background-color: #0a0f1e;">
+              <h4 class="font-semibold mb-2 text-indigo-300">Can I pay for my subscription via purchase order?</h4>
+              <p class="text-sm text-slate-400">Absolutely, we are happy to take your money in all forms.</p>
+            </div>
+            <div class="rounded-2xl p-6 ring-1 ring-indigo-800" style="background-color: #0a0f1e;">
+              <h4 class="font-semibold mb-2 text-indigo-300">How do I apply for a job at TaxPal?</h4>
+              <p class="text-sm text-slate-400">We only hire our customers, so subscribe for a minimum of 6 months and then let's talk.</p>
+            </div>
+            <div class="rounded-2xl p-6 ring-1 ring-indigo-800" style="background-color: #0a0f1e;">
+              <h4 class="font-semibold mb-2 text-indigo-300">What was that testimonial about tax fraud all about?</h4>
+              <p class="text-sm text-slate-400">TaxPal is just a software application, ultimately your books are your responsibility.</p>
+            </div>
+            <div class="rounded-2xl p-6 ring-1 ring-indigo-800" style="background-color: #0a0f1e;">
+              <h4 class="font-semibold mb-2 text-indigo-300">TaxPal sounds horrible but why do I still feel compelled to purchase?</h4>
+              <p class="text-sm text-slate-400">This is the power of excellent visual design. You just can't resist it, no matter how poorly it actually functions.</p>
+            </div>
+            <div class="rounded-2xl p-6 ring-1 ring-indigo-800" style="background-color: #0a0f1e;">
+              <h4 class="font-semibold mb-2 text-indigo-300">I found other companies called TaxPal, are you sure you can use this name?</h4>
+              <p class="text-sm text-slate-400">Honestly not sure at all. We haven't incorporated or anything, we just thought it sounded cool.</p>
+            </div>
+            <div class="rounded-2xl p-6 ring-1 ring-indigo-800" style="background-color: #0a0f1e;">
+              <h4 class="font-semibold mb-2 text-indigo-300">How do you generate reports?</h4>
+              <p class="text-sm text-slate-400">You just tell us what data you need a report for, and we get our kids to create beautiful charts using only the finest crayons.</p>
+            </div>
+            <div class="rounded-2xl p-6 ring-1 ring-indigo-800" style="background-color: #0a0f1e;">
+              <h4 class="font-semibold mb-2 text-indigo-300">Can we expect more inventory features?</h4>
+              <p class="text-sm text-slate-400">In life it's really better to never expect anything at all.</p>
+            </div>
+            <div class="rounded-2xl p-6 ring-1 ring-indigo-800" style="background-color: #0a0f1e;">
+              <h4 class="font-semibold mb-2 text-indigo-300">I lost my password, how do I get into my account?</h4>
+              <p class="text-sm text-slate-400">Send us an email and we will send you a copy of our latest password spreadsheet so you can find your information.</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+
+    <!-- FOOTER — darkest bg -->
+    <footer class="border-t border-indigo-900 py-12 px-6" style="background-color: #060a14;">
+      <div class="max-w-7xl mx-auto">
+
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 mb-8">
+          <a href="#" class="flex items-center gap-2">
+            <div class="w-7 h-7 bg-indigo-600 rounded-full flex items-center justify-center">
+              <div class="w-2.5 h-2.5 bg-pink-400 rounded-full"></div>
+            </div>
+            <span class="text-lg font-bold text-white">Tax<span class="text-pink-400">Pal</span></span>
+          </a>
+          <nav class="flex gap-6">
+            <a href="#features" class="text-sm text-slate-400 hover:text-indigo-400 transition">Features</a>
+            <a href="#testimonials" class="text-sm text-slate-400 hover:text-indigo-400 transition">Testimonials</a>
+            <a href="#pricing" class="text-sm text-slate-400 hover:text-indigo-400 transition">Pricing</a>
+          </nav>
+        </div>
+
+        <div class="border-t border-indigo-900 pt-8">
+          <p class="text-sm text-slate-500 text-center">Copyright &copy; 2026 TaxPal. All rights reserved.</p>
+        </div>
+
+      </div>
+    </footer>
+
+  </body>
+</html>
