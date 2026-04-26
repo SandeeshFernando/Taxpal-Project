@@ -98,6 +98,44 @@ The Small Business plan is visually highlighted.
 
 The FAQ section contains common questions and answers about TaxPal.
 
+## File Structure
+
+A simple project structure could look like this:
+
+```text
+taxpal-landing-page/
+├── index.html
+└── README.md
+```
+
+If you add local images, CSS, or JavaScript later, you can expand it like this:
+
+```text
+taxpal-landing-page/
+├── index.html
+├── README.md
+├── assets/
+│   └── images/
+├── css/
+│   └── style.css
+└── js/
+    └── script.js
+```
+
+## How to Run the Project
+
+### Option 1: Open Directly in a Browser
+
+1. Download or clone the project.
+2. Open `index.html` in your browser.
+
+### Option 2: Use VS Code Live Server
+
+1. Open the project folder in Visual Studio Code.
+2. Install the **Live Server** extension.
+3. Right-click `index.html`.
+4. Select **Open with Live Server**.
+
 ### 10. Footer
 
 The footer includes:
