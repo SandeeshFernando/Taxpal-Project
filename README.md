@@ -141,5 +141,84 @@ taxpal-landing-page/
 The footer includes:
 
 - TaxPal logo
+
+## Customisation
+
+You can customise the website by editing the HTML file.
+
+### Change Brand Colours
+
+The custom theme colours are defined in the `<style>` block:
+
+```css
+@theme {
+  --color-brand-by-abhishek: #4f46e5;
+  --color-brand-by-abishek: #0a0f1e;
+}
+```
+
+Main colours used across the page include:
+
+- Dark navy: `#0a0f1e`
+- Indigo: `#4f46e5`
+- Pink: `#f472b6`
+- Slate text colours from Tailwind CSS
+
+### Change Pricing
+
+Pricing cards are located in the **Pricing** section. Update the plan names, prices, and feature lists directly in the HTML.
+
+### Change Testimonials
+
+Testimonials are located in the **Testimonials** section. You can update:
+
+- Quote text
+- Customer name
+- Job title
+- Avatar image URL
+
+### Change Navigation Links
+
+The navigation links currently point to internal sections and example paths. For smoother single-page navigation, update links like this:
+
+```html
+<a href="#features">Features</a>
+<a href="#testimonials">Testimonials</a>
+<a href="#pricing">Pricing</a>
+```
+
+## Recommended Improvements
+
+The current page is fully usable as a static landing page, but these improvements can make it more polished:
+
+- Move inline styles into a separate CSS file.
+- Fix spelling mistakes such as `Bussiness` to `Business`.
+- Remove spaces from file paths such as `index .html`.
+- Replace placeholder or joke text with real product copy.
+- Add a mobile menu for smaller screens.
+- Add form functionality for sign-in or get-started buttons.
+- Optimise external images for faster loading.
+- Add accessibility labels where needed.
+- Add SEO meta tags such as description, keywords, and Open Graph tags.
+
+## Browser Support
+
+This page should work in modern browsers such as:
+
+- Google Chrome
+- Microsoft Edge
+- Firefox
+- Safari
+
+Because Tailwind is loaded from a CDN, an internet connection is required for the styling to load correctly.
+
+## License
+
+This project is for learning and portfolio purposes. You can modify and use it for practice, assignments, or personal projects.
+
+## Author
+
+Created as a TaxPal landing page project.
+
 - Navigation links
 - Copyright text
