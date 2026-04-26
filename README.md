@@ -98,6 +98,14 @@ The Small Business plan is visually highlighted.
 
 The FAQ section contains common questions and answers about TaxPal.
 
+### 10. Footer
+
+The footer includes:
+
+- TaxPal logo
+- Navigation links
+- Copyright text
+
 ## File Structure
 
 A simple project structure could look like this:
@@ -135,12 +143,6 @@ taxpal-landing-page/
 2. Install the **Live Server** extension.
 3. Right-click `index.html`.
 4. Select **Open with Live Server**.
-
-### 10. Footer
-
-The footer includes:
-
-- TaxPal logo
 
 ## Customisation
 
@@ -219,6 +221,3 @@ This project is for learning and portfolio purposes. You can modify and use it f
 ## Author
 
 Created as a TaxPal landing page project.
-
-- Navigation links
-- Copyright text
