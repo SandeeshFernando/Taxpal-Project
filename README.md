@@ -11,3 +11,17 @@ The website is designed for a fictional accounting platform called **TaxPal**. I
 > Accounting made for small businesses and for everyone.
 
 The page uses a modern SaaS-style layout with strong typography, rounded cards, gradients, hover effects, and responsive sections.
+
+## Technologies Used
+
+- HTML5
+- Tailwind CSS
+- Inline custom Tailwind theme variables
+- External images and SVG assets
+- Responsive layout utilities
+
+Tailwind CSS is loaded through the CDN:
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+```
